@@ -68,29 +68,32 @@ const Nav = () => {
 
                 <div
                     className={`${isToggled ? "" : "hidden"
-                        } flex flex-col w-2/3 space-y-6 py-4 text-xl md:hidden bg-white`}
+                        } flex flex-col w-2/3 space-y-6 py-4 text-xl md:hidden bg-white p-6`}
                 >
-                    <button
-                        id="menu-btn"
-                        className={`block md:hidden`}
-                        type="button"
-                        onClick={handleHamburgerClick}
-                    >
-                        <Image
-                            alt='logo'
-                            src='/images/icon-menu.svg'
-                            width={40}
-                            height={17}
-                            className={isToggled ? "hidden" : ""}
-                        />
-                        <Image
-                            alt='logo'
-                            src='/images/icon-menu-close.svg'
-                            width={40}
-                            height={17}
-                            className={isToggled ? "" : "hidden"}
-                        />
-                    </button>
+                    <div className="flex flex-row justify-between">
+                        <div></div>
+                        <button
+                            id="menu-btn"
+                            className={`block md:hidden`}
+                            type="button"
+                            onClick={handleHamburgerClick}
+                        >
+                            <Image
+                                alt='logo'
+                                src='/images/icon-menu.svg'
+                                width={40}
+                                height={17}
+                                className={isToggled ? "hidden" : ""}
+                            />
+                            <Image
+                                alt='logo'
+                                src='/images/icon-menu-close.svg'
+                                width={40}
+                                height={17}
+                                className={isToggled ? "" : "hidden"}
+                            />
+                        </button>
+                    </div>
                     {items.map((item) => (
                         <NavItem key={item} item={item}></NavItem>
                     ))}
