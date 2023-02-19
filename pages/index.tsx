@@ -1,3 +1,4 @@
+import Nav from '@/components/nav'
 import Image from 'next/image'
 
 export default function Home() {
@@ -5,29 +6,7 @@ export default function Home() {
     <div className='flex flex-col items-center'>
       <div className="flex flex-col justify-center m-4 space-y-8 font-inter xl:w-3/4">
         {/* NavBar Section */}
-        <div className="flex flex-row justify-between">
-          <Image
-            alt='logo'
-            src='/images/logo.svg'
-            width={65}
-            height={40}
-          />
-          <Image
-            alt='logo'
-            src='/images/icon-menu.svg'
-            width={40}
-            height={17}
-            className='md:hidden'
-          />
-          <div className="hidden flex flex-row text-darkGrayishBlue text-lg md:block space-x-4">
-            Home
-            New
-            Popular
-            Trending
-            Categories
-          </div>
-        </div>
-
+        <Nav></Nav>
         <div className="flex flex-col md:flex-row md:space-x-4">
           {/* Main Area */}
           <div className='md:w-2/3'>
