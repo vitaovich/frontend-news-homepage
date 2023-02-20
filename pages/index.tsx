@@ -35,7 +35,7 @@ export default function Home() {
       <div className="flex flex-col justify-center m-4 space-y-8 font-inter xl:w-3/4">
         <Nav />
         <HeroContainer />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {
             topics.map((topic) => (
               <Topic key={topic.header} imagePath={topic.imagePath} imageAlt={topic.imageAlt} header={topic.header} title={topic.title} content={topic.content} />
