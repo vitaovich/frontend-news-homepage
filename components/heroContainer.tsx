@@ -28,7 +28,7 @@ const HeroContainer = () => {
                             We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
                             But is it really fulfilling its promise?
                         </p>
-                        <div className="bg-softRed text-offWhite py-2 px-6 w-1/2 uppercase text-center tracking-widest">Read more</div>
+                        <a href="#" className="bg-softRed text-offWhite py-2 px-6 w-1/2 uppercase text-center tracking-widest hover:bg-veryDarkBlue">Read more</a>
                     </div>
                 </div>
             </div>
