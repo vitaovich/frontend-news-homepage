@@ -1,3 +1,4 @@
+import ArticleContainer from '@/components/articleContainer'
 import Nav from '@/components/nav'
 import Topic from '@/components/topic'
 import Image from 'next/image'
@@ -39,23 +40,7 @@ export default function Home() {
             </div>
           </div>
           {/* Articles section */}
-          <div className="flex flex-col bg-veryDarkBlue p-4 md:w-1/3">
-            <h1 className="text-softOrange text-3xl">New</h1>
-            <div className="grid grid-cols-1 divide-y divide-darkGrayishBlue ">
-              <div className='my-4'>
-                <h2 className="text-offWhite text-xl font-bold">Hydrogen VS Electric Cars</h2>
-                <p className="text-grayishBlue">Will hydrogen-fueled cars ever catch up to EVs?</p>
-              </div>
-              <div className='my-4'>
-                <h2 className="text-offWhite text-xl font-bold">The Downsides of AI Artistry</h2>
-                <p className="text-grayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
-              </div>
-              <div className='my-4'>
-                <h2 className="text-offWhite text-xl font-bold">Is VC Funding Drying Up?</h2>
-                <p className="text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-              </div>
-            </div>
-          </div>
+          <ArticleContainer></ArticleContainer>
         </div>
 
 
