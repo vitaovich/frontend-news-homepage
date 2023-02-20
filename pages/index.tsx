@@ -1,4 +1,5 @@
 import Nav from '@/components/nav'
+import Topic from '@/components/topic'
 import Image from 'next/image'
 
 export default function Home() {
@@ -60,48 +61,27 @@ export default function Home() {
 
         {/* Topics section */}
         <div className="flex flex-col space-y-4 md:flex-row md:space-x-2">
-          <div className="flex flex-row md:w-1/3">
-            <Image
-              alt='retro pcs'
-              src='/images/image-retro-pcs.jpg'
-              width={200}
-              height={254}
-              className='w-1/4'
-            />
-            <div className="flex flex-col ml-6 space-y-2">
-              <h1 className="text-grayishBlue text-3xl">01</h1>
-              <h2 className="text-veryDarkBlue text-xl font-bold">Reviving Retro PCs</h2>
-              <p className="text-grayishBlue">What happens when old PCs are given modern upgrades?</p>
-            </div>
-          </div>
-          <div className="flex flex-row md:w-1/3">
-            <Image
-              alt='top laptops'
-              src='/images/image-top-laptops.jpg'
-              width={200}
-              height={254}
-              className='w-1/4'
-            />
-            <div className="flex flex-col ml-6 space-y-2">
-              <h1 className="text-grayishBlue text-3xl">02</h1>
-              <h2 className="text-veryDarkBlue text-xl font-bold">Top 10 Laptops of 2022</h2>
-              <p className="text-grayishBlue">Our best picks for various needs and budgets.</p>
-            </div>
-          </div>
-          <div className="flex flex-row md:w-1/3">
-            <Image
-              alt='gaming growth'
-              src='/images/image-gaming-growth.jpg'
-              width={200}
-              height={254}
-              className='w-1/4'
-            />
-            <div className="flex flex-col ml-6 space-y-2">
-              <h1 className="text-grayishBlue text-3xl">03</h1>
-              <h2 className="text-veryDarkBlue text-xl font-bold">The Growth of Gaming</h2>
-              <p className="text-grayishBlue">How the pandemic has sparked fresh opportunities.</p>
-            </div>
-          </div>
+          <Topic 
+          imagePath={'/images/image-retro-pcs.jpg'} 
+          imageAlt={'retro pcs'} 
+          header={'01'} 
+          title={'Reviving Retro PCs'} 
+          content={'What happens when old PCs are given modern upgrades?'}
+          />
+          <Topic 
+          imagePath={'/images/image-top-laptops.jpg'} 
+          imageAlt={'top laptops'} 
+          header={'02'} 
+          title={'Top 10 Laptops of 2022'} 
+          content={'Our best picks for various needs and budgets.'}
+          />
+          <Topic 
+          imagePath={'/images/image-gaming-growth.jpg'} 
+          imageAlt={'gaming growth'} 
+          header={'03'} 
+          title={'The Growth of Gaming'} 
+          content={'How the pandemic has sparked fresh opportunities.'}
+          />
         </div>
 
       </div>
