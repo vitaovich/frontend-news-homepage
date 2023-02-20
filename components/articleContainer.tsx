@@ -10,7 +10,7 @@ const ArticleContainer = () => {
         ]
     )
     return (
-        <div className="flex flex-col bg-veryDarkBlue p-4 md:w-1/3">
+        <div className="flex flex-col bg-veryDarkBlue p-4">
             <h1 className="text-softOrange text-3xl">New</h1>
             <div className="grid grid-cols-1 divide-y divide-darkGrayishBlue ">
                 {

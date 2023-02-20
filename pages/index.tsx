@@ -1,8 +1,6 @@
-import ArticleContainer from '@/components/articleContainer'
 import HeroContainer from '@/components/heroContainer'
 import Nav from '@/components/nav'
 import Topic from '@/components/topic'
-import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Home() {
